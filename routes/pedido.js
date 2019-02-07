@@ -7,7 +7,7 @@ const routes = new Pedido();
 
 
 pedido.post('/pedido/add', routes.CreatePedido);
-pedido.get('/pedido/get/:id_driver?', routes.GetTareasDriver);
+pedido.get('/pedido/get/:id_driver?/:fecha_entrega/', routes.GetTareasDriver);
 
 
 module.exports = pedido;
